@@ -1,0 +1,365 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c00;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #c00;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aef3;
+}
+
+.hero {
+  background: url(https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsfGVufDB8fDB8fHww);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.search-box {
+  backdrop-filter: blur;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input,
+.search-box select,
+.search-box button {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.search-box button {
+  background: #c00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #a00;
+}
+.section {
+  padding: 50px 20px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  
+}
+
+.card {
+  min-width: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s;   
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.deals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.deal {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.deal:hover {
+  transform: scale(1.03);
+}
+
+.deal img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.deal-body {
+  padding: 15px;
+}
+
+.deal-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.deal-price {
+  font-size: 1rem;
+  color: #c00;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.deal-price del {
+  color: #777;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+    .banner2{
+      display:flex;
+      gap: 20px;
+      background: rgb(243, 240, 236);
+      border-radius: 8px;
+      padding: 24px;
+      align-items: center;
+      box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+      width: 1200px;
+      margin: 0 auto;
+      margin: 60px;
+      
+    }
+    .banner2-img{
+      flex: 0 0 340px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 28 28px black;
+    }
+    .banner2-image img{
+      display:block;
+      width:100%;
+      height:100%;
+      background-size:cover;
+    }
+    .banner2-content{
+      flex:1 1 auto;
+      min-width: 0;
+      padding-right: 8px;
+    }
+    .banner2 h2{
+      font-size: 34px;
+      margin: 0 0 12px 0;
+      line-height: 1.05;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+    }
+    .banner2-content ul{
+      margin: 12px 0 18px 0;
+      padding-left: 20px;
+      color: var(--muted);
+      line-height:1.6;
+      font-size: 16px;
+    }
+    .promo-content p.small{
+      margin: 0 0 10px 0;
+      font-weight:600;
+      color: #111827;
+    }
+    .banner2_content .a{
+      display:inline-block;
+      margin-top:8px;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .qr{
+      flex: 0 0 120px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .qr img{
+      width:110px;
+      height:110px;
+      object-fit:cover;
+      border-radius:8px;
+      border:1px solid rgba(0,0,0,0.06);
+      background: #fff;
+    }
+footer{
+  height: 300px;
+  width: 100%;
+  background: #f7f1f1;
+  display: grid;
+  display: flex;
+  gap: 33%;
+  padding: 55px;
+}
+ul li a:hover{
+  text-decoration: none;
+  color: rgb(252, 0, 0);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  nav a {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+
+  .banner2 {
+    flex-direction: column;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .banner2-img {
+    flex: 0 0 auto;
+    max-width: 100%;
+  }
+
+  .qr {
+    margin-top: 20px;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cards {
+    gap: 12px;
+  }
+
+  .deal img {
+    height: 150px;
+  }
+
+  .banner2 h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .search-box input,
+  .search-box select,
+  .search-box button {
+    width: 100%;
+  }
+
+  .card {
+    min-width: 180px;
+  }
+
+  .deal img {
+    height: 130px;
+  }
+
+  .banner2 {
+    padding: 16px;
+  }
+
+  .banner2 h2 {
+    font-size: 20px;
+  }
+
+  .qr img {
+    width: 80px;
+    height: 80px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+  }
+}
