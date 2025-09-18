@@ -1,1 +1,1 @@
-# Hotel.com
+# Hotel.com clone
